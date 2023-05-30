@@ -1,0 +1,13 @@
+{
+	"sources": [
+		"src",
+		"assets"
+	],
+	"config": {
+		"imports": {
+			"export-module": {
+				"/": ">=1.0.0"
+			}
+		}
+	}
+}

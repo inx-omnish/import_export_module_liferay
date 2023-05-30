@@ -1,0 +1,23 @@
+{
+	"name": "export-module",
+	"version": "1.0.0",
+	"description": "Export Module",
+	"dependencies": {
+		"@babel/runtime": "^7.11.2",
+		"@liferay/dxp-7.4": "*"
+	},
+	"scripts": {
+		"build": "liferay build",
+		"clean": "liferay clean",
+		"deploy": "liferay deploy"
+	},
+	"portlet": {
+		"com.liferay.portlet.display-category": "category.import/export",
+		"com.liferay.portlet.header-portlet-css": "/css/styles.css",
+		"com.liferay.portlet.instanceable": true,
+		"javax.portlet.name": "exportmodule",
+		"javax.portlet.security-role-ref": "power-user,user",
+		"javax.portlet.display-name": "Export Module"
+	},
+	"main": "index.js"
+}
